@@ -1,5 +1,3 @@
-import { cn } from "@/lib/utils";
-
 export interface FAQAccordionItem {
   question: string;
   answer: string;
