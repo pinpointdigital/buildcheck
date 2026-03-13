@@ -12,7 +12,7 @@ export const SITE = {
 } as const;
 
 export const COMPANY = {
-  name: "Zoom ADU, Inc.",
+  name: "ZOOM ADU, Inc.",
   cslb: "1145664",
   cslbDisplay: "CSLB #1145664",
   veteranOwned: true,

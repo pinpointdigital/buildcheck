@@ -17,10 +17,10 @@ import { COMPANY } from "@/lib/constants";
 import { getCitySlugs } from "@/content/cities";
 
 const trustItems = [
-  { label: "Licensed California Class B General Contractor", value: COMPANY.cslbDisplay },
-  { label: "Veteran-owned. California S-Corp. Based in Carlsbad, CA." },
-  { label: "Real experience assessing and completing projects abandoned by other contractors." },
-  { label: "A specialized service by Zoom ADU, Inc." },
+  { label: "Licensed California Class B General Contractor", value: COMPANY.cslbDisplay, icon: "license" as const },
+  { label: "Veteran-owned. California. Based in Carlsbad, CA.", icon: "veteran" as const },
+  { label: "Real experience assessing and completing projects abandoned by other contractors.", icon: "experience" as const },
+  { label: "A specialized service by ZOOM ADU, Inc.", icon: "zoom" as const },
 ];
 
 const processSteps = [

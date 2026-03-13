@@ -9,7 +9,7 @@ import { COMPANY } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
-  title: "About BuildCheck | A Service by Zoom ADU | San Diego County",
+  title: "About BuildCheck | A Service by ZOOM ADU | San Diego County",
   description:
     "Professional construction failure assessment for homeowners stuck with abandoned or poorly built projects. Licensed, veteran-owned. Carlsbad, CA.",
   path: "about",
@@ -76,17 +76,17 @@ export default function AboutPage() {
 
       <ContentSection background="subtle">
         <PageContainer width="content">
-          <SectionHeader title="About Zoom ADU" />
+          <SectionHeader title="About ZOOM ADU" />
           <div className="max-w-[var(--container-reading)] space-y-4 text-body text-[var(--color-text-primary)]">
-            <p>BuildCheck is a specialized service of Zoom ADU, Inc.</p>
+            <p>BuildCheck is a specialized service of ZOOM ADU, Inc.</p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>California S-Corp. Licensed Class B General Contractor  -  {COMPANY.cslbDisplay}.</li>
+              <li>California. Licensed Class B General Contractor  -  {COMPANY.cslbDisplay}.</li>
               <li>Veteran-owned. Based in Carlsbad, CA.</li>
               <li>Active in residential construction throughout San Diego County.</li>
             </ul>
             <p>
               The assessment is independent  -  you&apos;re paying for an honest evaluation, not a sales
-              pitch. If it leads to a construction project that fits both parties, Zoom ADU handles
+              pitch. If it leads to a construction project that fits both parties, ZOOM ADU handles
               the execution. If it doesn&apos;t, the assessment stands on its own.
             </p>
             <Button href={ROUTES.requestAssessment} variant="primary">
