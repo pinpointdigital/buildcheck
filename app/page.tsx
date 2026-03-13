@@ -105,7 +105,7 @@ export default function HomePage() {
           </>
         }
         threeLineHeadline
-        subtitle="BuildCheck is a paid, independent construction failure assessment for San Diego homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built. We document what went wrong, what it will cost to fix, and whether the project is worth completing."
+        subtitle="BuildCheck is an independent construction failure assessment for San Diego homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built. We document what went wrong, what it will cost to fix, and whether the project is worth completing."
         cta={{ label: "Request Your Project Assessment →", href: ROUTES.requestAssessment }}
         availability={`Limited availability. We accept ${ASSESSMENT_AVAILABILITY}.`}
         variant="light"
