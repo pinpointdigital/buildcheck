@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContentSection } from "@/components/page-sections/ContentSection";
 import { cn } from "@/lib/utils";
@@ -7,6 +10,23 @@ export interface ProcessStep {
   description: string;
   detail?: string;
 }
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.07, delayChildren: 0.05 },
+  },
+};
+
+const stepItem = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
 
 interface ProcessStepsProps {
   overline?: string;
@@ -24,10 +44,17 @@ export function ProcessSteps({
   return (
     <ContentSection className={className}>
       <SectionHeader overline={overline} title={title} />
-      <div className="relative max-w-[var(--container-narrow)]">
+      <motion.div
+        className="relative max-w-[var(--container-narrow)]"
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-5% 0px -5% 0px" }}
+      >
         {steps.map((step, i) => (
-          <div
+          <motion.div
             key={i}
+            variants={stepItem}
             className={cn(
               "relative flex gap-6 pb-10 last:pb-0",
               i < steps.length - 1 &&
@@ -48,9 +75,9 @@ export function ProcessSteps({
                 </p>
               )}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </ContentSection>
   );
 }

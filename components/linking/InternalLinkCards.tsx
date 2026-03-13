@@ -28,7 +28,7 @@ export function InternalLinkCards({
           <li key={item.href}>
             <Link
               href={item.href}
-              className="block rounded-md border border-border-light bg-bg-default p-5 transition-colors duration-[var(--duration-fast)] hover:bg-bg-subtle border-l-4 border-l-accent"
+              className="block rounded-md border border-border-light bg-bg-default p-5 transition-all duration-200 ease-out hover:bg-bg-subtle hover:-translate-y-0.5 border-l-4 border-l-accent"
             >
               <span className="font-semibold text-navy-800">{item.title}</span>
               {item.description && (

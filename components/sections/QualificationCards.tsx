@@ -1,7 +1,6 @@
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ContentSection } from "@/components/page-sections/ContentSection";
 import { Card } from "@/components/ui/Card";
-import { cn } from "@/lib/utils";
 
 export interface QualificationItem {
   title: string;

@@ -1,5 +1,4 @@
 import { ContentSection } from "./ContentSection";
-import { cn } from "@/lib/utils";
 
 interface SplitSectionProps {
   left: React.ReactNode;

@@ -1,5 +1,5 @@
 {
-  "name": "buildcheck-temp",
+  "name": "buildcheck",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -9,7 +9,7 @@ interface CardProps {
 
 export function Card({ children, className, href }: CardProps) {
   const base =
-    "block rounded-md border border-border-light bg-bg-default p-6 transition-colors duration-[var(--duration-fast)] hover:bg-bg-subtle";
+    "block rounded-md border border-border-light bg-bg-default p-6 transition-all duration-200 ease-out hover:bg-bg-subtle hover:-translate-y-0.5";
 
   if (href) {
     return (

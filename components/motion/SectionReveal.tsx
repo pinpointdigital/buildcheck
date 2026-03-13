@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const defaultVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
-      ease: [0.22, 1, 0.36, 1],
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -31,7 +31,7 @@ export function SectionReveal({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+      viewport={{ once: true, margin: "-8% 0px -8% 0px" }}
       variants={variants}
       className={cn(className)}
     >

@@ -8,7 +8,6 @@ import {
   type AssessmentFormData,
 } from "@/lib/assessment-form-schema";
 import { Button } from "@/components/ui/Button";
-import { cn } from "@/lib/utils";
 
 const STEPS = [
   { id: "project", title: "Project details" },
@@ -58,15 +57,15 @@ export function MultiStepAssessmentForm({
     handleSubmit,
     formState: { errors, isSubmitting },
     trigger,
-    watch,
   } = useForm<AssessmentFormData>({
-    resolver: zodResolver(assessmentFormSchema),
+    resolver: zodResolver(assessmentFormSchema) as never,
     defaultValues: {
       projectType: undefined,
       city: "",
       permitStatus: undefined,
       projectStage: undefined,
       problemDescription: "",
+      photoUrls: [],
       name: "",
       email: "",
       phone: "",

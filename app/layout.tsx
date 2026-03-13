@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
+import { Libre_Baskerville, Inter } from "next/font/google";
 import { defaultMetadata } from "@/lib/seo/metadata";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
-const instrumentSerif = Instrument_Serif({
+const libreBaskerville = Libre_Baskerville({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-instrument-serif",
+  variable: "--font-headline-display",
   display: "swap",
 });
 
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${instrumentSerif.variable} ${inter.variable} font-body antialiased`}
+        className={`${libreBaskerville.variable} ${inter.variable} font-body antialiased`}
         style={
           {
-            "--font-headline": "var(--font-instrument-serif), Georgia, serif",
+            "--font-headline": "var(--font-headline-display), Georgia, serif",
             "--font-body": "var(--font-inter), system-ui, sans-serif",
           } as React.CSSProperties
         }

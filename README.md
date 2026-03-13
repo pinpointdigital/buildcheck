@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BuildCheck
 
-## Getting Started
+Construction Failure Analysis & Completion Planning — a specialized service by ZOOM ADU.
 
-First, run the development server:
+Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion.
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+- **`app/`** — Routes: homepage, service, how-it-works, who-this-is-for, about, request-assessment, `city/[city]`, `articles/[slug]`, API route `api/assessment`.
+- **`components/`** — Layout (Header, Footer), page-section primitives (PageHero, ContentSection, TrustSection, FAQSection, CTASection, SplitSection), sections (ProcessSteps, AuthorityCallout, etc.), linking blocks (RelatedArticlesBlock, RelatedCitiesBlock, CoreServiceLinksBlock, CTABlock), form (MultiStepAssessmentForm), content layouts (ArticleLayout, CityPageLayout), UI (Button, Card, SectionHeader, FAQAccordion), motion (SectionReveal), SEO (JsonLd).
+- **`content/`** — Scalable content: `content/schemas/` (city, article, meta types), `content/cities/*.ts` (one file per city), `content/articles/*.ts` (one file per article). `content/cities/index.ts` and `content/articles/index.ts` export `getAllCities`, `getCityBySlug`, `getAllArticles`, `getArticleBySlug`, and slug lists for SSG/sitemap.
+- **`lib/`** — `constants`, `utils`, `seo/metadata`, `seo/schema`, `assessment-form-schema` (Zod). Form submits to `POST /api/assessment` (backend-ready for webhook/CRM).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adding content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **New city:** Add `content/cities/<slug>.ts` (see `chula-vista.ts`) and register it in `content/cities/index.ts`.
+- **New article:** Add `content/articles/<slug>.ts` (see `contractor-abandoned-adu-chula-vista.ts`) and register it in `content/articles/index.ts`.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design tokens and motion are in `app/globals.css`; Tailwind is extended in `tailwind.config.ts`.

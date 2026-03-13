@@ -5,8 +5,6 @@ import {
   buildArticleJsonLd,
 } from "@/lib/seo/schema";
 
-type SchemaType = "organization" | "localBusiness" | "service" | "article";
-
 interface JsonLdProps {
   type: "organization" | "localBusiness" | "service";
 }
@@ -23,8 +21,14 @@ interface JsonLdArticleProps {
 export function JsonLd(props: JsonLdProps | JsonLdArticleProps) {
   let data: object;
   if (props.type === "article") {
-    const { type, ...articleProps } = props;
-    data = buildArticleJsonLd(articleProps);
+    const { headline, description, url, datePublished, dateModified } = props;
+    data = buildArticleJsonLd({
+      headline,
+      description,
+      url,
+      datePublished,
+      dateModified,
+    });
   } else if (props.type === "organization") {
     data = buildOrganizationJsonLd();
   } else if (props.type === "localBusiness") {

@@ -11,11 +11,11 @@ import type { CityContent } from "@/content/schemas/city";
 
 interface CityPageLayoutProps {
   city: CityContent;
-  /** Optional FAQ items for this city */
+  /** Optional FAQ items for this city (reserved for future use) */
   faqItems?: { question: string; answer: string }[];
 }
 
-export function CityPageLayout({ city, faqItems = [] }: CityPageLayoutProps) {
+export function CityPageLayout({ city }: CityPageLayoutProps) {
   return (
     <>
       <PageHero

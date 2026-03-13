@@ -6,14 +6,14 @@ import { z } from "zod";
  */
 export const assessmentFormSchema = z.object({
   projectType: z.enum(["adu", "addition", "remodel", "garage-conversion", "other"], {
-    required_error: "Please select a project type.",
+    error: "Please select a project type.",
   }),
   city: z.string().min(1, "City is required."),
   permitStatus: z.enum(["active", "closed", "unsure"], {
-    required_error: "Please select permit status.",
+    error: "Please select permit status.",
   }),
   projectStage: z.enum(["framework", "inspections", "near-completion", "unknown"], {
-    required_error: "Please select project stage.",
+    error: "Please select project stage.",
   }),
   problemDescription: z.string().min(10, "Please describe the problem (at least 10 characters)."),
   photoUrls: z.array(z.string()).optional().default([]),

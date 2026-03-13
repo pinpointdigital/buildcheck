@@ -38,7 +38,7 @@
   --bg-accent-tint: #f5e6e2;
 
   /* === TYPOGRAPHY === */
-  --font-headline: "Instrument Serif", "Georgia", serif;
+  --font-headline: "Libre Baskerville", "Georgia", serif;
   --font-body: "Inter", "system-ui", -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", monospace;
   --text-hero: clamp(2.75rem, 4vw, 3.5rem);
@@ -129,6 +129,13 @@
     font-size: var(--text-body);
     line-height: var(--leading-normal);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Clean, crisp headlines */
+  .font-headline {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: var(--tracking-tight);
   }
   :focus-visible {
     outline: 2px solid var(--color-teal);
