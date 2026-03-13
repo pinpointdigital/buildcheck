@@ -57,7 +57,7 @@ const faqItems = [
   {
     question: "What if I just want the report?",
     answer:
-      "That's fine. The report is the core product. Many clients use it to evaluate options, file a CSLB complaint, or consult an attorney  -  without hiring us for construction.",
+      "That's fine. The report is the core product. Use it as a roadmap to evaluate options, file a CSLB complaint, or consult an attorney  -  without hiring us for construction.",
   },
   {
     question: "Is this a home inspection?",
@@ -145,6 +145,8 @@ export default function HomePage() {
       <SplitSection
         background="subtle"
         leftTitle="Is BuildCheck Right for You?"
+        leftAccent="positive"
+        rightAccent="muted"
         left={
           <>
             <ul className="list-disc pl-6 space-y-2">
