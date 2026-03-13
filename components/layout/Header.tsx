@@ -28,7 +28,7 @@ export function Header() {
             href={ROUTES.home}
             className="font-headline text-xl font-bold text-navy-800 tracking-tight"
           >
-            BuildCheck
+            BuildCheck<sup className="text-[0.55em] font-normal align-super">™</sup>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Main">
