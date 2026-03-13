@@ -59,7 +59,7 @@ export function ArticleLayout({ article }: ArticleLayoutProps) {
             <CoreServiceLinksBlock />
             <CTABlock
               heading="Get a professional assessment"
-              ctaLabel="Request an Assessment"
+              ctaLabel="Request Your Project Assessment"
               ctaHref={ROUTES.requestAssessment}
               note="Limited availability. We accept 4–6 assessments per month."
             />

@@ -32,6 +32,8 @@ interface PageHeroProps {
   cta?: { label: string; href: string };
   availability?: string;
   variant?: "light" | "dark";
+  /** Use smaller hero font so three lines don't wrap on desktop */
+  threeLineHeadline?: boolean;
   className?: string;
 }
 
@@ -41,6 +43,7 @@ export function PageHero({
   cta,
   availability,
   variant = "light",
+  threeLineHeadline = false,
   className,
 }: PageHeroProps) {
   const isDark = variant === "dark";
@@ -56,12 +59,15 @@ export function PageHero({
         <motion.div
           className={cn("max-w-[var(--container-reading)]", isDark && "text-white")}
           variants={stagger}
-          initial="hidden"
+          initial="visible"
           animate="visible"
         >
           <motion.h1
             variants={item}
-            className="font-headline text-hero font-bold tracking-tight text-inherit"
+            className={cn(
+              "font-headline font-bold tracking-tight text-inherit flex flex-col",
+              threeLineHeadline ? "text-hero-three-lines" : "text-hero"
+            )}
           >
             {title}
           </motion.h1>

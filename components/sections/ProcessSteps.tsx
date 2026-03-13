@@ -47,9 +47,9 @@ export function ProcessSteps({
       <motion.div
         className="relative max-w-[var(--container-narrow)]"
         variants={container}
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
-        viewport={{ once: true, margin: "-5% 0px -5% 0px" }}
+        viewport={{ once: true, margin: "-5% 0px -5% 0px", amount: 0.05 }}
       >
         {steps.map((step, i) => (
           <motion.div

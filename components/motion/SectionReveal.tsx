@@ -29,9 +29,9 @@ export function SectionReveal({
 }: SectionRevealProps) {
   return (
     <motion.div
-      initial="hidden"
+      initial="visible"
       whileInView="visible"
-      viewport={{ once: true, margin: "-8% 0px -8% 0px" }}
+      viewport={{ once: true, margin: "-8% 0px -8% 0px", amount: 0.05 }}
       variants={variants}
       className={cn(className)}
     >

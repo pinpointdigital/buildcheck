@@ -82,7 +82,7 @@ export function buildServiceJsonLd(): JsonLdService {
     "@type": "Service",
     name: "Construction Failure Assessment",
     description:
-      "Professional assessment of abandoned, stalled, or poorly built residential construction — ADUs, additions, garage conversions, major remodels. San Diego County.",
+      "Professional assessment of abandoned, stalled, or poorly built residential construction  -  ADUs, additions, garage conversions, major remodels. San Diego County.",
     provider: { "@id": `${BASE_URL}#organization` },
   };
 }

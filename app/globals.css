@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* ==========================================================================
-   BuildCheck Design System — Design & Motion Tokens
+   BuildCheck Design System  -  Design & Motion Tokens
    ========================================================================== */
 
 :root {
@@ -42,6 +42,8 @@
   --font-body: "Inter", "system-ui", -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", monospace;
   --text-hero: clamp(2.75rem, 4vw, 3.5rem);
+  /* Slightly smaller max so "You Trusted a Contractor." fits one line → 3 lines on desktop */
+  --text-hero-three-lines: clamp(2.5rem, 3.5vw, 2.75rem);
   --text-h1: clamp(2rem, 3vw, 2.5rem);
   --text-h2: clamp(1.5rem, 2.5vw, 1.875rem);
   --text-h3: clamp(1.25rem, 2vw, 1.5rem);
@@ -166,4 +168,16 @@
   .container-form {
     max-width: var(--container-form);
   }
+  .text-hero-three-lines {
+    font-size: var(--text-hero-three-lines);
+    line-height: var(--leading-tight);
+  }
+}
+
+/* FAQ accordion: native details/summary, hide default marker */
+.faq-accordion details summary {
+  list-style: none;
+}
+.faq-accordion details summary::-webkit-details-marker {
+  display: none;
 }

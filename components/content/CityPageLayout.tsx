@@ -22,7 +22,7 @@ export function CityPageLayout({ city }: CityPageLayoutProps) {
         title={city.hero.title}
         subtitle={city.hero.subtitle}
         cta={{
-          label: `Request an Assessment for Your ${city.name} Project`,
+          label: "Request Your Project Assessment",
           href: ROUTES.requestAssessment,
         }}
         variant="light"
@@ -75,7 +75,7 @@ export function CityPageLayout({ city }: CityPageLayoutProps) {
       <ContentSection background="subtle">
         <PageContainer width="narrow">
           <AuthorityCallout title="Taking over a project">
-            Another contractor can take over your project — but not without understanding the full
+            Another contractor can take over your project  -  but not without understanding the full
             picture first. Deficiencies hidden behind drywall or in mechanical systems can turn a
             simple completion into a much larger project. That is what our assessment uncovers.
           </AuthorityCallout>
@@ -97,7 +97,7 @@ export function CityPageLayout({ city }: CityPageLayoutProps) {
             <CoreServiceLinksBlock />
             <CTABlock
               heading={`Request an assessment for your ${city.name} project`}
-              ctaLabel="Request an Assessment"
+              ctaLabel="Request Your Project Assessment"
               ctaHref={ROUTES.requestAssessment}
             />
           </div>

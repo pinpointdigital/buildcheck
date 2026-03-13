@@ -20,8 +20,8 @@ export default function ConstructionFailureAssessmentPage() {
     <>
       <PageHero
         title="Construction Failure Assessment"
-        subtitle="A professional, documented evaluation of your stalled, abandoned, or poorly built construction project — by a licensed California general contractor."
-        cta={{ label: "Request an Assessment", href: ROUTES.requestAssessment }}
+        subtitle="A professional, documented evaluation of your stalled, abandoned, or poorly built construction project  -  by a licensed California general contractor."
+        cta={{ label: "Request Your Project Assessment", href: ROUTES.requestAssessment }}
         variant="light"
       />
 
@@ -43,7 +43,7 @@ export default function ConstructionFailureAssessmentPage() {
               complaint, or making any other move.
             </p>
             <Button href={ROUTES.requestAssessment} variant="primary">
-              Request an Assessment →
+              Request Your Project Assessment →
             </Button>
           </div>
         </PageContainer>
@@ -54,31 +54,31 @@ export default function ConstructionFailureAssessmentPage() {
           <SectionHeader title="What's in the Report" />
           <ul className="max-w-[var(--container-reading)] list-disc pl-6 space-y-2 text-body text-[var(--color-text-primary)]">
             <li>
-              <strong>Project history review</strong> — contract, permits, payment records, inspection
+              <strong>Project history review</strong>  -  contract, permits, payment records, inspection
               timeline
             </li>
             <li>
-              <strong>On-site inspection</strong> — structural, mechanical, finish quality, code
+              <strong>On-site inspection</strong>  -  structural, mechanical, finish quality, code
               compliance, photographed throughout
             </li>
             <li>
-              <strong>Deficiency identification</strong> — visible problems and flagged areas where
+              <strong>Deficiency identification</strong>  -  visible problems and flagged areas where
               hidden issues are likely
             </li>
             <li>
-              <strong>Inspection risk analysis</strong> — whether the work can realistically pass
+              <strong>Inspection risk analysis</strong>  -  whether the work can realistically pass
               remaining inspections
             </li>
             <li>
-              <strong>Corrective scope and cost estimates</strong> — what needs to be fixed and what
+              <strong>Corrective scope and cost estimates</strong>  -  what needs to be fixed and what
               it will realistically cost
             </li>
             <li>
-              <strong>Completion strategy</strong> — practical paths forward, including phased
+              <strong>Completion strategy</strong>  -  practical paths forward, including phased
               approaches
             </li>
             <li>
-              <strong>Recovery guidance</strong> — whether a CSLB complaint, bond claim, or attorney
+              <strong>Recovery guidance</strong>  -  whether a CSLB complaint, bond claim, or attorney
               consultation is worth pursuing
             </li>
           </ul>
@@ -112,7 +112,7 @@ export default function ConstructionFailureAssessmentPage() {
             If you hire BuildCheck to complete the project within 90 days, 100% of the assessment
             fee is credited toward the construction contract. The fee is non-refundable. It covers
             real professional time, site evaluation, research, and a written deliverable. This is
-            the product — not a sales tool.
+            the product  -  not a sales tool.
           </AuthorityCallout>
         </PageContainer>
       </ContentSection>
@@ -141,8 +141,8 @@ export default function ConstructionFailureAssessmentPage() {
       </ContentSection>
 
       <CTASection
-        heading="Request a Construction Failure Assessment"
-        primaryCta={{ label: "Request an Assessment", href: ROUTES.requestAssessment }}
+heading="Request Your Project Assessment"
+  primaryCta={{ label: "Request Your Project Assessment", href: ROUTES.requestAssessment }}
         background="default"
       />
     </>

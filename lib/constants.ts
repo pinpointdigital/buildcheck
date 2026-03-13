@@ -8,7 +8,7 @@ export const SITE = {
   tagline: "Construction Failure Analysis & Completion Planning",
   endorsement: "A specialized service by ZOOM ADU, Inc.",
   description:
-    "Professional construction failure assessment for San Diego County homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built.",
+    "Professional construction failure assessment for San Diego homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built.",
 } as const;
 
 export const COMPANY = {
@@ -17,7 +17,7 @@ export const COMPANY = {
   cslbDisplay: "CSLB #1145664",
   veteranOwned: true,
   location: "Carlsbad, CA",
-  phone: "(760) 555-0100", // Placeholder — replace with real number
+  phone: "(760) 555-0100", // Placeholder  -  replace with real number
   hours: "Monday–Friday, 8–5 PM Pacific",
 } as const;
 

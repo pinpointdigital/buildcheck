@@ -14,7 +14,7 @@ export const chulaVista: CityContent = {
       "Your Chula Vista construction project was abandoned or poorly built. BuildCheck provides a professional assessment that documents what went wrong and what it takes to finish correctly.",
   },
   localContext:
-    "Chula Vista has seen significant ADU activity in recent years — and with it, a rise in contractor failures. BuildCheck serves Chula Vista homeowners dealing with abandoned projects, open permits, and work that passed inspection but doesn't feel right. The City of Chula Vista Development Services Department oversees building permits and inspections.",
+    "Chula Vista has seen significant ADU activity in recent years  -  and with it, a rise in contractor failures. BuildCheck serves Chula Vista homeowners dealing with abandoned projects, open permits, and work that passed inspection but doesn't feel right. The City of Chula Vista Development Services Department oversees building permits and inspections.",
   permitAuthority: {
     name: "City of Chula Vista Development Services",
     url: "https://www.chulavistaca.gov/departments/development-services",

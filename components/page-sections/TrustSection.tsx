@@ -50,9 +50,9 @@ export function TrustSection({
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-center justify-items-center text-center lg:text-left"
           variants={container}
-          initial="hidden"
+          initial="visible"
           whileInView="visible"
-          viewport={{ once: true, margin: "-4% 0px -4% 0px" }}
+          viewport={{ once: true, margin: "-4% 0px -4% 0px", amount: 0.05 }}
         >
           {items.map((itemRow, i) => (
             <motion.div

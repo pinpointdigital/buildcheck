@@ -84,13 +84,12 @@ export function Header() {
         </div>
       </header>
 
-      {/* Mobile overlay */}
+      {/* Mobile menu: positioned below header so hamburger button stays clickable */}
       <div
         className={cn(
-          "fixed inset-0 z-[var(--z-mobile-menu)] bg-white md:hidden transition-opacity duration-slow",
-          mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          "fixed left-0 right-0 top-16 bottom-0 z-[var(--z-mobile-menu)] bg-white md:hidden transition-opacity duration-300",
+          mobileOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         )}
-        style={{ paddingTop: "4rem" }}
       >
         <nav
           className="flex flex-col items-center justify-center gap-8 py-12 px-6"

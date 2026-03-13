@@ -57,7 +57,7 @@ const faqItems = [
   {
     question: "What if I just want the report?",
     answer:
-      "That's fine. The report is the core product. Many clients use it to evaluate options, file a CSLB complaint, or consult an attorney — without hiring us for construction.",
+      "That's fine. The report is the core product. Many clients use it to evaluate options, file a CSLB complaint, or consult an attorney  -  without hiring us for construction.",
   },
   {
     question: "Is this a home inspection?",
@@ -67,7 +67,7 @@ const faqItems = [
   {
     question: "Can the report help with a CSLB complaint or bond claim?",
     answer:
-      "Yes. The report documents specific deficiencies and code issues — substantially more useful than a verbal description. It is not a legal document or expert witness opinion.",
+      "Yes. The report documents specific deficiencies and code issues  -  substantially more useful than a verbal description. It is not a legal document or expert witness opinion.",
   },
   {
     question: "What project types do you assess?",
@@ -99,13 +99,14 @@ export default function HomePage() {
       <PageHero
         title={
           <>
-            <span className="block">You Trusted a Contractor.</span>
-            <span className="block">They Didn&apos;t Finish.</span>
-            <span className="block">Now You&apos;re Stuck.</span>
+            <span className="block leading-[1.2]">You Trusted a Contractor.</span>
+            <span className="block leading-[1.2]">They Didn&apos;t Finish.</span>
+            <span className="block leading-[1.2]">Now You&apos;re Stuck.</span>
           </>
         }
-        subtitle="BuildCheck is a paid, independent construction failure assessment for San Diego County homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built. We document what went wrong, what it will cost to fix, and whether the project is worth completing."
-        cta={{ label: "Request a Construction Failure Assessment →", href: ROUTES.requestAssessment }}
+        threeLineHeadline
+        subtitle="BuildCheck is a paid, independent construction failure assessment for San Diego homeowners whose ADU, addition, garage conversion, or major remodel was abandoned, stalled, or poorly built. We document what went wrong, what it will cost to fix, and whether the project is worth completing."
+        cta={{ label: "Request Your Project Assessment →", href: ROUTES.requestAssessment }}
         availability={`Limited availability. We accept ${ASSESSMENT_AVAILABILITY}.`}
         variant="light"
       />
@@ -124,14 +125,14 @@ export default function HomePage() {
           <div className="max-w-[var(--container-reading)] space-y-4 text-body text-[var(--color-text-primary)] leading-normal">
             <p>
               A thorough, documented evaluation of a residential construction project that has gone
-              wrong — performed by a licensed California general contractor.
+              wrong  -  performed by a licensed California general contractor.
             </p>
             <p>Not a free estimate. Not a home inspection. Not a legal opinion.</p>
             <p>You receive a written professional report that tells you:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>What was built correctly and what was not</li>
               <li>Whether the work can pass remaining inspections</li>
-              <li>What deficiencies exist — including problems that may not be visible</li>
+              <li>What deficiencies exist  -  including problems that may not be visible</li>
               <li>What it will realistically cost to correct and complete</li>
               <li>Whether the project is worth finishing</li>
             </ul>
@@ -188,7 +189,7 @@ export default function HomePage() {
             <ul className="list-disc pl-6 space-y-2">
               <li>Inspectors are overloaded. A typical site visit: 15–20 minutes.</li>
               <li>
-                Inspections check minimum code compliance at a specific stage — not overall quality,
+                Inspections check minimum code compliance at a specific stage  -  not overall quality,
                 durability, or workmanship.
               </li>
               <li>What passes at framing tells you nothing about what happened after the walls closed.</li>
@@ -196,7 +197,7 @@ export default function HomePage() {
             <AuthorityCallout>
               If your contractor cut corners in one area you can see, there is a strong probability
               they cut corners in areas you cannot see. A passed inspection does not change that
-              math. Our assessment evaluates the actual construction — not just the inspection record.
+              math. Our assessment evaluates the actual construction  -  not just the inspection record.
             </AuthorityCallout>
           </div>
         </PageContainer>
@@ -216,7 +217,7 @@ export default function HomePage() {
               See the Full Process →
             </Button>
             <Button href={ROUTES.requestAssessment} variant="primary">
-              Request an Assessment →
+              Request Your Project Assessment →
             </Button>
           </div>
         </PageContainer>
@@ -237,7 +238,7 @@ export default function HomePage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>CSLB complaints take 6–12 months. They cannot order direct payment.</li>
-              <li>Contractor bonds are capped at $25,000 — split among all claimants.</li>
+              <li>Contractor bonds are capped at $25,000  -  split among all claimants.</li>
               <li>Attorneys focus on litigation, not getting the project finished.</li>
               <li>Other contractors avoid taking over messy, partially built work.</li>
             </ul>
@@ -279,7 +280,7 @@ export default function HomePage() {
               variant="primary"
               className="bg-accent text-white hover:bg-accent-hover"
             >
-              Request an Assessment for Your San Diego County Project →
+              Request Your Project Assessment →
             </Button>
           </div>
         </PageContainer>
@@ -294,7 +295,7 @@ export default function HomePage() {
       <CTASection
         heading="Your Project Deserves a Straight Answer."
         primaryCta={{
-          label: "Request a Construction Failure Assessment",
+          label: "Request Your Project Assessment",
           href: ROUTES.requestAssessment,
         }}
         note={`Or call directly: ${COMPANY.phone}. Limited availability.`}

@@ -1,6 +1,6 @@
 # BuildCheck
 
-Construction Failure Analysis & Completion Planning — a specialized service by ZOOM ADU.
+Construction Failure Analysis & Completion Planning  -  a specialized service by ZOOM ADU.
 
 Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion.
 
@@ -22,10 +22,10 @@ npm start
 
 ## Project structure
 
-- **`app/`** — Routes: homepage, service, how-it-works, who-this-is-for, about, request-assessment, `city/[city]`, `articles/[slug]`, API route `api/assessment`.
-- **`components/`** — Layout (Header, Footer), page-section primitives (PageHero, ContentSection, TrustSection, FAQSection, CTASection, SplitSection), sections (ProcessSteps, AuthorityCallout, etc.), linking blocks (RelatedArticlesBlock, RelatedCitiesBlock, CoreServiceLinksBlock, CTABlock), form (MultiStepAssessmentForm), content layouts (ArticleLayout, CityPageLayout), UI (Button, Card, SectionHeader, FAQAccordion), motion (SectionReveal), SEO (JsonLd).
-- **`content/`** — Scalable content: `content/schemas/` (city, article, meta types), `content/cities/*.ts` (one file per city), `content/articles/*.ts` (one file per article). `content/cities/index.ts` and `content/articles/index.ts` export `getAllCities`, `getCityBySlug`, `getAllArticles`, `getArticleBySlug`, and slug lists for SSG/sitemap.
-- **`lib/`** — `constants`, `utils`, `seo/metadata`, `seo/schema`, `assessment-form-schema` (Zod). Form submits to `POST /api/assessment` (backend-ready for webhook/CRM).
+- **`app/`**  -  Routes: homepage, service, how-it-works, who-this-is-for, about, request-assessment, `city/[city]`, `articles/[slug]`, API route `api/assessment`.
+- **`components/`**  -  Layout (Header, Footer), page-section primitives (PageHero, ContentSection, TrustSection, FAQSection, CTASection, SplitSection), sections (ProcessSteps, AuthorityCallout, etc.), linking blocks (RelatedArticlesBlock, RelatedCitiesBlock, CoreServiceLinksBlock, CTABlock), form (MultiStepAssessmentForm), content layouts (ArticleLayout, CityPageLayout), UI (Button, Card, SectionHeader, FAQAccordion), motion (SectionReveal), SEO (JsonLd).
+- **`content/`**  -  Scalable content: `content/schemas/` (city, article, meta types), `content/cities/*.ts` (one file per city), `content/articles/*.ts` (one file per article). `content/cities/index.ts` and `content/articles/index.ts` export `getAllCities`, `getCityBySlug`, `getAllArticles`, `getArticleBySlug`, and slug lists for SSG/sitemap.
+- **`lib/`**  -  `constants`, `utils`, `seo/metadata`, `seo/schema`, `assessment-form-schema` (Zod). Form submits to `POST /api/assessment` (backend-ready for webhook/CRM).
 
 ## Adding content
 
