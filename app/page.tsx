@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: "Do you take over projects from other contractors?",
     answer:
-      "When the assessment shows the project is recoverable and fits our capabilities, yes. We never bid blind. The assessment is how we determine whether a project is something we can stand behind.",
+      "When the assessment shows the project is recoverable and fits our capabilities, yes. We never bid blind. The assessment determines whether a project is something we can stand behind.",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function HomePage() {
       <SectionReveal>
       <SplitSection
         background="subtle"
-        leftTitle="Is BuildCheck Right for You?"
+        leftTitle="Is BuildCheck™ Right for You?"
         leftAccent="positive"
         rightAccent="muted"
         left={
@@ -158,7 +158,7 @@ export default function HomePage() {
             </ul>
           </>
         }
-        rightTitle="When BuildCheck Is Not the Right Fit"
+        rightTitle="When BuildCheck™ Is Not the Right Fit"
         right={
           <>
             <ul className="list-disc pl-6 space-y-2">

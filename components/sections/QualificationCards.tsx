@@ -20,7 +20,7 @@ export function QualificationCards({
   overline,
   title,
   forItems,
-  notForTitle = "When BuildCheck Is Not the Right Fit",
+  notForTitle = "When BuildCheck™ Is Not the Right Fit",
   notForItems = [],
   className,
 }: QualificationCardsProps) {
@@ -30,7 +30,7 @@ export function QualificationCards({
       <div className="grid md:grid-cols-2 gap-8 mt-8">
         <div>
           <h3 className="text-h4 font-semibold text-navy-800 mb-4">
-            BuildCheck Is Built for You If…
+            BuildCheck™ Is Built for You If…
           </h3>
           <div className="space-y-4">
             {forItems.map((item, i) => (

@@ -39,4 +39,4 @@ export const NAV_LINKS = [
   { href: ROUTES.about, label: "About" },
 ] as const;
 
-export const ASSESSMENT_AVAILABILITY = "4–6 assessments per month";
+export const ASSESSMENT_AVAILABILITY = "8–10 assessments per month";

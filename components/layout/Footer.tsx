@@ -11,7 +11,7 @@ export function Footer() {
               href={ROUTES.home}
               className="font-headline text-xl font-bold text-white tracking-tight"
             >
-              {SITE.name}
+              {SITE.name}<sup className="text-[0.55em] font-normal align-super">™</sup>
             </Link>
             <p className="text-caption mt-2 text-text-inverse-muted">
               {SITE.endorsement}

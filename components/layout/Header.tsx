@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ROUTES } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -13,6 +14,7 @@ const navLinks = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -32,15 +34,30 @@ export function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8" aria-label="Main">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-[15px] font-medium text-[var(--color-text-secondary)] hover:text-navy-800 transition-colors duration-[var(--duration-fast)]"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    "group relative py-1 text-[15px] font-medium transition-colors duration-200",
+                    isActive
+                      ? "text-navy-800"
+                      : "text-[var(--color-text-secondary)] hover:text-navy-800"
+                  )}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  {link.label}
+                  <span
+                    className={cn(
+                      "absolute bottom-0 left-0 h-px bg-teal transition-[transform] duration-200 ease-out",
+                      isActive ? "w-full scale-x-100" : "w-full scale-x-0 origin-left group-hover:scale-x-100"
+                    )}
+                  />
+                </Link>
+              );
+            })}
             <Link
               href={ROUTES.requestAssessment}
               className="inline-flex items-center justify-center rounded-sm bg-accent text-white font-semibold text-[15px] px-6 py-2.5 hover:bg-accent-hover transition-all duration-[var(--duration-fast)] hover:-translate-y-px"
@@ -95,16 +112,23 @@ export function Header() {
           className="flex flex-col items-center justify-center gap-8 py-12 px-6"
           aria-label="Main mobile"
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-lg font-medium text-navy-800"
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-lg font-medium text-navy-800 py-1 px-2 -mx-2 rounded-sm",
+                  isActive && "bg-teal-light/50"
+                )}
+                onClick={() => setMobileOpen(false)}
+                aria-current={isActive ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Link
             href={ROUTES.requestAssessment}
             className="inline-flex items-center justify-center rounded-sm bg-accent text-white font-semibold text-[15px] px-8 py-3.5 w-full max-w-xs"

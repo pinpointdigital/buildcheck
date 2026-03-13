@@ -4,7 +4,7 @@ import { RelatedArticlesBlock } from "@/components/linking/RelatedArticlesBlock"
 import { RelatedCitiesBlock } from "@/components/linking/RelatedCitiesBlock";
 import { CoreServiceLinksBlock } from "@/components/linking/CoreServiceLinksBlock";
 import { CTABlock } from "@/components/linking/CTABlock";
-import { ROUTES } from "@/lib/constants";
+import { ROUTES, ASSESSMENT_AVAILABILITY } from "@/lib/constants";
 import type { ArticleContent } from "@/content/schemas/article";
 
 interface ArticleLayoutProps {
@@ -61,7 +61,7 @@ export function ArticleLayout({ article }: ArticleLayoutProps) {
               heading="Get a professional assessment"
               ctaLabel="Request Your Project Assessment"
               ctaHref={ROUTES.requestAssessment}
-              note="Limited availability. We accept 4–6 assessments per month."
+              note={`Limited availability. We accept ${ASSESSMENT_AVAILABILITY}.`}
             />
           </div>
         </PageContainer>

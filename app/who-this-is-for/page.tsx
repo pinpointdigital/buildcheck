@@ -65,14 +65,14 @@ export default function WhoThisIsForPage() {
     <>
       <PageHero
         title="Who This Is For"
-        subtitle="This page will help you determine if BuildCheck makes sense for your project before you call."
+        subtitle="This page will help you determine if BuildCheck™ makes sense for your project before you call."
         variant="light"
       />
 
       <QualificationCards
-        title="Is BuildCheck Right for You?"
+        title="Is BuildCheck™ Right for You?"
         forItems={forItems}
-        notForTitle="BuildCheck Is Not the Right Fit If…"
+        notForTitle="BuildCheck™ Is Not the Right Fit If…"
         notForItems={notForItems}
       />
 
