@@ -28,7 +28,7 @@ export default function RequestAssessmentPage() {
             <ol className="list-decimal list-inside space-y-2">
               <li>We review your submission within 1–2 business days.</li>
               <li>If your project fits, we schedule a 15–20 minute screening call (no cost).</li>
-              <li>We confirm whether an assessment is the right step and discuss the fee ($1,500–$3,500).</li>
+              <li>We confirm whether an assessment is the right step and discuss the fee ($2,500 to $3,500).</li>
             </ol>
             <p className="mt-4">This is a paid professional service.</p>
           </AuthorityCallout>

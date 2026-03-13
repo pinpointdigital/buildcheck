@@ -105,7 +105,7 @@ export default function ConstructionFailureAssessmentPage() {
         <PageContainer width="narrow">
           <SectionHeader title="Pricing" />
           <p className="text-body text-[var(--color-text-primary)] mb-6">
-            $1,500–$3,500 depending on project type, permit complexity, and site conditions.
+            $2,500 to $3,500 depending on project type, permit complexity, and site conditions.
             Confirmed after the screening call.
           </p>
           <AuthorityCallout>
